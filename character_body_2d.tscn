@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://die6sircibkdl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqe66"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eqe66"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1630898009]
+
+[node name="SwordArea" type="Area2D" parent="." unique_id=719074471]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwordArea" unique_id=1856330130]
+shape = SubResource("RectangleShape2D_eqe66")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=947019709]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=2140308917]
+shape = SubResource("CapsuleShape2D_eqe66")
